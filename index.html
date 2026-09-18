@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>مالك للتقنية | برمجة تطبيقات ومواقع وخدمات إلكترونية وتعليمية</title>
+  <meta name="title" content="مالك للتقنية | برمجة تطبيقات ومواقع وخدمات إلكترونية وتعليمية">
+  <meta name="description" content="مالك للتقنية يقدم خدمات برمجة تطبيقات Android وiPhone، تصميم المواقع الإلكترونية، المشاريع والبحوث التعليمية، والدعم في الخدمات الإلكترونية.">
+  <meta name="keywords" content="مالك للتقنية, برمجة تطبيقات, برمجة مواقع, تصميم مواقع, Android, iPhone, مشاريع تخرج, بحوث جامعية, خدمات إلكترونية, خدمات أبشر, حساب المواطن, الضمان الاجتماعي, سكني, سمة">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Malek Technology">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shatalarabia-cmd.github.io/malektec/">
+  <meta property="og:title" content="مالك للتقنية | حلول تقنية وتعليمية وخدمات إلكترونية">
+  <meta property="og:description" content="برمجة تطبيقات ومواقع، مساعدة تعليمية ومشاريع تخرج، وخدمات إلكترونية باحترافية وسرعة.">
+  <meta property="og:image" content="assets/logo.svg">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "مالك للتقنية - Malek Technology",
+    "url": "https://shatalarabia-cmd.github.io/malektec/",
+    "logo": "https://shatalarabia-cmd.github.io/malektec/assets/logo.svg",
+    "description": "منصة تقديم خدمات برمجة التطبيقات والمواقع الإلكترونية، المشاريع والبحوث التعليمية، والمساعدة في الخدمات الإلكترونية بالمملكة العربية السعودية.",
+    "telephone": "+966542553175",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SA"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo-link" aria-label="مالك للتقنية Logo">
+        <img src="assets/logo.svg" alt="مالك للتقنية" class="logo-img">
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active" data-i18n="navHome">الرئيسية</a>
+        <a href="#services" class="nav-link" data-i18n="navServices">خدماتنا</a>
+        <a href="#services" onclick="setTimeout(()=>document.querySelector('[data-filter=\'tech\']').click(),100)" class="nav-link" data-i18n="navTech">التقنية</a>
+        <a href="#services" onclick="setTimeout(()=>document.querySelector('[data-filter=\'edu\']').click(),100)" class="nav-link" data-i18n="navEdu">التعليم</a>
+        <a href="#services" onclick="setTimeout(()=>document.querySelector('[data-filter=\'elec\']').click(),100)" class="nav-link" data-i18n="navElec">الخدمات الإلكترونية</a>
+        <a href="#about" class="nav-link" data-i18n="navAbout">من نحن</a>
+        <a href="#faq" class="nav-link" data-i18n="navFaq">الأسئلة الشائعة</a>
+        <a href="#contact" class="nav-link" data-i18n="navContact">تواصل معنا</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="lang-toggle" class="btn btn-outline" style="padding: 0.4rem 0.8rem; font-size:0.85rem;">English</button>
+        <a href="https://wa.me/966542553175" target="_blank" class="btn btn-primary" data-i18n="whatsappBtn">
+          <i class="fab fa-whatsapp"></i> واتساب
+        </a>
+        <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge" data-i18n="heroBadge">🚀 شريكك التقني والتعليمي الموثوق</span>
+        <h1 data-i18n="heroTitle">حلول تقنية وتعليمية وخدمات إلكترونية <span>في مكان واحد</span></h1>
+        <p data-i18n="heroSub">مالك للتقنية نقدم خدمات البرمجة وتطوير تطبيقات الجوال والمواقع الإلكترونية، بالإضافة إلى مشاريع التخرج والبحوث والخدمات التعليمية والإلكترونية باحترافية وسرعة.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-accent" data-i18n="heroBtnOrder">
+            <i class="fas fa-paper-plane"></i> اطلب خدمتك الآن
+          </a>
+          <a href="https://wa.me/966542553175" target="_blank" class="btn btn-outline" data-i18n="heroBtnWa">
+            <i class="fab fa-whatsapp"></i> تواصل معنا عبر واتساب
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/hero-illustration.svg" alt="Malek Technology Visual Graphic">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <h2 class="section-title" data-i18n="secServicesTitle">خدماتنا المتميزة</h2>
+      <p class="section-subtitle" data-i18n="secServicesSub">نقدم باقة شاملة من الحلول التقنية المبتكرة والخدمات التعليمية والإلكترونية بأعلى معايير الجودة.</p>
+
+      <div class="services-tabs">
+        <button class="tab-btn active" data-filter="all" data-i18n="tabAll">جميع الخدمات</button>
+        <button class="tab-btn" data-filter="tech" data-i18n="tabTech">الخدمات التقنية</button>
+        <button class="tab-btn" data-filter="edu" data-i18n="tabEdu">الخدمات التعليمية</button>
+        <button class="tab-btn" data-filter="elec" data-i18n="tabElec">الخدمات الإلكترونية</button>
+      </div>
+
+      <div class="services-grid">
+        <!-- Tech Services -->
+        <div class="service-card" data-category="tech">
+          <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>برمجة تطبيقات الجوال</h3>
+          <p>تصميم وبرمجة تطبيقات الجوال لنظامي Android وiOS بواجهات حديثة وتجربة مستخدم احترافية.</p>
+          <button onclick="orderServiceWA('برمجة تطبيقات الجوال')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+
+        <div class="service-card" data-category="tech">
+          <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>تصميم وبرمجة المواقع الإلكترونية</h3>
+          <p>إنشاء مواقع إلكترونية احترافية ومتجاوبة للشركات والأفراد والمتاجر والمشاريع.</p>
+          <button onclick="orderServiceWA('تصميم وبرمجة المواقع الإلكترونية')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+
+        <div class="service-card" data-category="tech">
+          <div class="card-icon"><i class="fas fa-cogs"></i></div>
+          <h3>الأنظمة والبرمجيات</h3>
+          <p>تطوير حلول وبرمجيات مخصصة حسب احتياجات المشروع.</p>
+          <button onclick="orderServiceWA('الأنظمة والبرمجيات')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+
+        <div class="service-card" data-category="tech">
+          <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>تطوير واجهات المستخدم</h3>
+          <p>تصميم واجهات حديثة وسهلة الاستخدام ومتوافقة مع جميع الأجهزة.</p>
+          <button onclick="orderServiceWA('تطوير واجهات المستخدم')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+
+        <!-- Educational Services -->
+        <div class="service-card" data-category="edu">
+          <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>مشاريع التخرج</h3>
+          <p>تنفيذ ومساعدة في مشاريع التخرج لطلاب الجامعات باللغة العربية والإنجليزية.</p>
+          <button onclick="orderServiceWA('مشاريع التخرج')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+
+        <div class="service-card" data-category="edu">
+          <div class="card-icon"><i class="fas fa-book"></i></div>
+          <h3>البحوث العلمية</h3>
+          <p>إعداد وتنسيق البحوث والدراسات والمشاريع الطلابية باللغة العربية والإنجليزية.</p>
+          <button onclick="orderServiceWA('البحوث العلمية')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+
+        <div class="service-card" data-category="edu">
+          <div class="card-icon"><i class="fas fa-tasks"></i></div>
+          <h3>المشاريع الجامعية والمدرسية</h3>
+          <p>المساعدة في إعداد المشاريع والواجبات والعروض والتقارير التعليمية.</p>
+          <button onclick="orderServiceWA('المشاريع الجامعية والمدرسية')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+
+        <div class="service-card" data-category="edu">
+          <div class="card-icon"><i class="fas fa-pen-alt"></i></div>
+          <h3>حل الواجبات</h3>
+          <p>المساعدة التعليمية في حل وفهم الواجبات والتكاليف الدراسية.</p>
+          <button onclick="orderServiceWA('حل الواجبات')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+
+        <div class="service-card" data-category="edu">
+          <div class="card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h3>الدروس الخصوصية</h3>
+          <p>دروس خصوصية في مختلف المواد الدراسية حسب احتياج الطالب.</p>
+          <button onclick="orderServiceWA('الدروس الخصوصية')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+
+        <!-- E-Services -->
+        <div class="service-card" data-category="elec">
+          <div class="card-icon"><i class="fas fa-hands-helping"></i></div>
+          <h3>خدمات الضمان الاجتماعي</h3>
+          <p>المساعدة في التسجيل والاستفادة من خدمات الضمان الاجتماعي.</p>
+          <button onclick="orderServiceWA('خدمات الضمان الاجتماعي')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+
+        <div class="service-card" data-category="elec">
+          <div class="card-icon"><i class="fas fa-users"></i></div>
+          <h3>حساب المواطن</h3>
+          <p>المساعدة في التسجيل وتحديث البيانات والاستفادة من خدمات حساب المواطن.</p>
+          <button onclick="orderServiceWA('حساب المواطن')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+
+        <div class="service-card" data-category="elec">
+          <div class="card-icon"><i class="fas fa-file-contract"></i></div>
+          <h3>عقود الإيجار</h3>
+          <p>المساعدة في إجراءات وتوثيق عقود الإيجار الإلكترونية.</p>
+          <button onclick="orderServiceWA('عقود الإيجار')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+
+        <div class="service-card" data-category="elec">
+          <div class="card-icon"><i class="fas fa-home"></i></div>
+          <h3>سكني</h3>
+          <p>المساعدة في التسجيل والاستفادة من خدمات منصة سكني.</p>
+          <button onclick="orderServiceWA('سكني')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+
+        <div class="service-card" data-category="elec">
+          <div class="card-icon"><i class="fas fa-id-card"></i></div>
+          <h3>أبشر</h3>
+          <p>المساعدة في تفعيل أبشر والاستفادة من الخدمات الإلكترونية المتاحة عبر المنصة.</p>
+          <button onclick="orderServiceWA('أبشر')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+
+        <div class="service-card" data-category="elec">
+          <div class="card-icon"><i class="fas fa-bolt"></i></div>
+          <h3>شركة الكهرباء</h3>
+          <p>المساعدة في الخدمات والإجراءات الإلكترونية المتعلقة بشركة الكهرباء.</p>
+          <button onclick="orderServiceWA('شركة الكهرباء')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+
+        <div class="service-card" data-category="elec">
+          <div class="card-icon"><i class="fas fa-tint"></i></div>
+          <h3>شركة المياه</h3>
+          <p>المساعدة في الخدمات الإلكترونية المتعلقة بشركة المياه.</p>
+          <button onclick="orderServiceWA('شركة المياه')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+
+        <div class="service-card" data-category="elec">
+          <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>تقارير سمة</h3>
+          <p>المساعدة في الوصول إلى خدمات وتقارير سمة المتاحة للمستفيد.</p>
+          <button onclick="orderServiceWA('تقارير سمة')" class="btn btn-outline" data-i18n="btnOrderCard">اطلب الخدمة</button>
+        </div>
+      </div>
+
+      <div class="disclaimer-banner">
+        <i class="fas fa-info-circle"></i>
+        <div data-i18n="disclaimerText">
+          <strong>ملاحظة مهمة:</strong> مالك للتقنية جهة مستقلة ولا تمثل أي جهة حكومية أو منصة رسمية، وتقدم المساعدة في الإجراءات والخدمات الإلكترونية.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us Section -->
+  <section class="why-us">
+    <div class="container">
+      <h2 class="section-title" data-i18n="secWhyTitle">لماذا تختار مالك للتقنية؟</h2>
+      <p class="section-subtitle" data-i18n="secWhySub">نلتزم بتقديم أفضل جودة مع السرعة والدقة في التنفيذ.</p>
+
+      <div class="features-grid">
+        <div class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><span data-i18n="f1">خبرة في الخدمات التقنية</span></div>
+        <div class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><span data-i18n="f2">حلول تقنية مخصصة</span></div>
+        <div class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><span data-i18n="f3">دعم ومتابعة مستمرة</span></div>
+        <div class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><span data-i18n="f4">سرعة في تنفيذ الطلبات</span></div>
+        <div class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><span data-i18n="f5">خدمات إلكترونية متعددة</span></div>
+        <div class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><span data-i18n="f6">خدمات تعليمية وتقنية</span></div>
+        <div class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><span data-i18n="f7">دعم باللغة العربية والإنجليزية</span></div>
+        <div class="feature-item"><div class="feature-icon"><i class="fas fa-check"></i></div><span data-i18n="f8">تصميمات حديثة ومتوافقة مع الجوال</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <h2 class="section-title" data-i18n="secAboutTitle">من نحن</h2>
+      <p class="section-subtitle" data-i18n="secAboutSub">تعرف على منصتنا ورسالتنا</p>
+      
+      <div class="about-box">
+        <p data-i18n="aboutText">
+          مالك للتقنية منصة خدمات تقنية وتعليمية وإلكترونية تهدف إلى تقديم حلول عملية للأفراد والطلاب وأصحاب المشاريع، من خلال خدمات البرمجة وتطوير المواقع والتطبيقات، والخدمات التعليمية، والمساعدة في الإجراءات الإلكترونية.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Steps Section -->
+  <section class="steps-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="secStepsTitle">كيف نعمل؟</h2>
+      <p class="section-subtitle" data-i18n="secStepsSub">خطوات بسيطة وسريعة للحصول على خدمتك</p>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3 data-i18n="step1Title">تواصل معنا</h3>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3 data-i18n="step2Title">حدد الخدمة المطلوبة</h3>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3 data-i18n="step3Title">نراجع الطلب والتفاصيل</h3>
+        </div>
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <h3 data-i18n="step4Title">نبدأ تنفيذ الخدمة ومتابعتها</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <h2 class="section-title" data-i18n="secFaqTitle">الأسئلة الشائعة</h2>
+      <p class="section-subtitle" data-i18n="secFaqSub">إجابات على أكثر الاستفسارات شيوعًا</p>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">ما الخدمات التي تقدمونها؟ <i class="fas fa-chevron-down"></i></div>
+          <div class="faq-answer">نقدم خدمات تقنية شاملة تشمل برمجة التطبيقات والمواقع، خدمات تعليمية كالجامعات ومشاريع التخرج والبحوث، وخدمات إلكترونية مساعدة للمنصات السعودية.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">هل تقدمون خدمات برمجة تطبيقات Android وiPhone؟ <i class="fas fa-chevron-down"></i></div>
+          <div class="faq-answer">نعم، نقوم بتصميم وتطوير تطبيقات متكاملة لنظامي Android و iOS باستخدام أحدث التقنيات وبأعلى معايير الأداء.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">هل يمكن تصميم موقع إلكتروني خاص؟ <i class="fas fa-chevron-down"></i></div>
+          <div class="faq-answer">بالتأكيد، نصمم ونبرمج مواقع إلكترونية مخصصة ومتاجر وبوابات إلكترونية تتناسب مع هويتك واحتياجات مشروعك.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">هل تقدمون خدمات للطلاب؟ <i class="fas fa-chevron-down"></i></div>
+          <div class="faq-answer">نعم، نقدم الدعم والمساعدة التعليمية والأكاديمية في المشاريع والبحوث وتوضيح المفاهيم ومشاريع التخرج بشكل مسؤولي ومستمر.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">هل يمكن طلب الخدمة عبر واتساب؟ <i class="fas fa-chevron-down"></i></div>
+          <div class="faq-answer">نعم، التواصل وطلب الخدمات يتم بكل سهولة وسرعة عبر تطبيق الواتساب المباشر مع فريقنا.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">هل الخدمات متاحة باللغة الإنجليزية؟ <i class="fas fa-chevron-down"></i></div>
+          <div class="faq-answer">نعم، جميع خدماتنا التقنية والتعليمية متوفرة باللغتين العربية والإنجليزية بطلاقة ودقة عالية.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">كيف أعرف تكلفة الخدمة؟ <i class="fas fa-chevron-down"></i></div>
+          <div class="faq-answer">يتم تحديد التكلفة بناءً على حجم ومتطلبات العمل والتفاصيل المطلوبة بعد مراجعتها فور تواصلك معنا.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">هل يمكن طلب خدمة غير موجودة في الموقع؟ <i class="fas fa-chevron-down"></i></div>
+          <div class="faq-answer">نعم، يمكنك التواصل معنا وطرح متطلباتك وسنقوم بدراستها وتوفير الحل المناسب لك.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-i18n="secContactTitle">تواصل معنا</h2>
+      <p class="section-subtitle" data-i18n="secContactSub">للاستفسار أو طلب أي خدمة، تواصل معنا مباشرة عبر واتساب.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3 data-i18n="contactCardTitle">معلومات التواصل المباشر</h3>
+          <p data-i18n="contactCardText">نحن هنا لمساعدتك دائماً. تواصل معنا عبر الواتساب للرد السريع على استفساراتك.</p>
+          
+          <div class="contact-method">
+            <div class="contact-method-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <strong>WhatsApp</strong>
+              <div dir="ltr" style="text-align: right;">+966 54 255 3175</div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/966542553175" target="_blank" class="btn btn-accent" style="width: 100%; margin-top: 1rem;" data-i18n="btnContactWa">
+            <i class="fab fa-whatsapp"></i> تواصل معنا عبر واتساب
+          </a>
+        </div>
+
+        <form class="contact-form" id="whatsapp-form">
+          <h3 style="margin-bottom: 1.5rem;" data-i18n="formTitle">نموذج طلب خدمة</h3>
+          
+          <div class="form-group">
+            <label for="form-name" data-i18n="formName">الاسم الكامل</label>
+            <input type="text" id="form-name" class="form-control" required placeholder="أدخل اسمك الكريم">
+          </div>
+
+          <div class="form-group">
+            <label for="form-phone" data-i18n="formPhone">رقم الجوال</label>
+            <input type="tel" id="form-phone" class="form-control" required placeholder="05xxxxxxxx">
+          </div>
+
+          <div class="form-group">
+            <label for="form-service" data-i18n="formService">نوع الخدمة</label>
+            <select id="form-service" class="form-control" required>
+              <option value="" disabled selected data-i18n="selectDefault">اختر الخدمة المطلوبة...</option>
+              <option value="برمجة تطبيقات الجوال">برمجة تطبيقات الجوال</option>
+              <option value="تصميم وبرمجة المواقع الإلكترونية">تصميم وبرمجة المواقع الإلكترونية</option>
+              <option value="الأنظمة والبرمجيات">الأنظمة والبرمجيات</option>
+              <option value="تطوير واجهات المستخدم">تطوير واجهات المستخدم</option>
+              <option value="مشاريع التخرج">مشاريع التخرج</option>
+              <option value="البحوث العلمية">البحوث العلمية</option>
+              <option value="المشاريع والواجبات">المشاريع والواجبات التعليمية</option>
+              <option value="الخدمات الإلكترونية">الخدمات الإلكترونية</option>
+              <option value="خدمة أخرى">خدمة أخرى...</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="form-details" data-i18n="formDetails">تفاصيل الطلب</label>
+            <textarea id="form-details" class="form-control" required placeholder="اكتب تفاصيل طلبك هنا..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="formSubmit">
+            <i class="fab fa-whatsapp"></i> إرسال الطلب عبر واتساب
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/966542553175?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A2%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%82%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D9%85%D8%A7%D9%84%D9%83%20%D9%84%D9%84%D8%AA%D9%82%D9%8A%D8%A9" target="_blank" class="whatsapp-float" aria-label="WhatsApp Contact">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="مالك للتقنية" style="height: 44px; filter: brightness(0) invert(1);">
+          <p data-i18n="footerDesc">حلول تقنية وتعليمية وخدمات إلكترونية باحترافية وسرعة.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title" data-i18n="footerQuickLinks">روابط سريعة</h4>
+          <ul class="footer-links">
+            <li><a href="#home" data-i18n="navHome">الرئيسية</a></li>
+            <li><a href="#services" data-i18n="navServices">خدماتنا</a></li>
+            <li><a href="#about" data-i18n="navAbout">من نحن</a></li>
+            <li><a href="#contact" data-i18n="navContact">تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title" data-i18n="footerServices">الخدمات الرئيسية</h4>
+          <ul class="footer-links">
+            <li><a href="#services">برمجة التطبيقات</a></li>
+            <li><a href="#services">المواقع الإلكترونية</a></li>
+            <li><a href="#services">مشاريع التخرج</a></li>
+            <li><a href="#services">البحوث العلمية</a></li>
+            <li><a href="#services">الخدمات الإلكترونية</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title" data-i18n="footerContact">معلومات التواصل</h4>
+          <ul class="footer-links">
+            <li><i class="fab fa-whatsapp"></i> 00966542553175</li>
+            <li><i class="fas fa-globe"></i> shatalarabia-cmd/malektec</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="copyright">© 2026 مالك للتقنية - جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
