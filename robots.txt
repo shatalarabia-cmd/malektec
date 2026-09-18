@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shatalarabia-cmd.github.io/malektec/sitemap.xml
